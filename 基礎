@@ -1,0 +1,1 @@
+    b = json.dumps(a)  # list 轉 json
