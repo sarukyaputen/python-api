@@ -1,2 +1,5 @@
     data = [{'a':"A",'b':(2,4),'c':3.0}]
     b = json.dumps(data)  # list 轉 json
+#................................................
+    pd.json(data)
+    b.to_csv('f:\out1.csv')
