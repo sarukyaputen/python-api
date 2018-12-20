@@ -3,10 +3,21 @@
 #................................................
     pd.json(data)
     b.to_csv('f:\out1.csv')
-    
 #---------------------------------------------------
 
-import csv
+import csv  # 讀csv  # 開啟 CSV 檔案
+with open('iris.csv', newline='') as csvfile:
+
+  # 讀取 CSV 檔案內容
+  rows = csv.reader(csvfile)
+
+  # 以迴圈輸出每一列
+  for row in rows:
+    print(row)
+
+#---------------------------------------------------
+
+import csv  #寫csv
 with open("test.csv","w") as csvfile:
     writer = csv.writer(csvfile)
     
