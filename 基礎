@@ -29,3 +29,4 @@ writer.writerows([[0,1,3],[1,2,3],[2,3,4]])
 with open ("./yyy1.txt","w", encoding = 'utf-8-sig')as c:
     c.write(str(data))
 
+# select * from member01 where B like '%"+x+"%' "   % 指 X 前後的字
