@@ -1,0 +1,28 @@
+score = []
+total =0 
+inscore = 0
+
+f = open("ch.txt","r") #  ch.txt   (99,77,55,43)
+s=f.readline()
+score=s.split(",")
+
+print("共有 %d 位學生" % (len(score) - 1))
+for i in range(0, len(score) - 1):
+     total += int(score[i])
+#total=sum(score)
+average = total / (len(score) - 1)
+print("本班總成績：%d 分，平均成績：%.2f 分" % (total, average))
+
+
+#--------------------------------------------------------------------------
+
+絕對路徑開檔
+
+f = open(r"C:\YY\eclipse-workspace\eclipse-workspace1\python\src\1\member.txt","r")
+
+s=f.readlines()
+for A in range(0,len(s)):    
+    if A<=6:
+        print(s[A],end="")     
+    else:
+        break
