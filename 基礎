@@ -36,3 +36,5 @@ with open ("./yyy1.txt","w", encoding = 'utf-8-sig')as c:
 type = str （""）
 要去除""  可以用eval  , json.load
 #-----------------------------------------------------------------------
+json load 　檔案
+json loads 網路資料
